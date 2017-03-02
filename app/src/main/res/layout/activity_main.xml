@@ -11,8 +11,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.dixonshen.testlayout.MainActivity">
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:id="@+id/scrollView1">
+
     <LinearLayout style="@style/wrap_layout"
-        android:id="@+id/linearLayout1">
+        android:id="@+id/linearLayout1"
+        android:visibility="gone">
     <LinearLayout style="@style/my_linearLayout">
         <TextView style="@style/attr_text"
             android:text="CPU Version"/>
@@ -20,7 +28,7 @@
         <TextView style="@style/val_text"
             android:text="1.0.0"/>
     </LinearLayout>
-    <View style="@style/SplitLine" />
+    <View style="@style/split_line" />
     <LinearLayout style="@style/my_linearLayout">
         <TextView style="@style/attr_text"
             android:text="RAM"/>
@@ -28,15 +36,16 @@
         <TextView style="@style/val_text"
             android:text="2G"/>
     </LinearLayout>
-    <View style="@style/SplitLine" />
+    <View style="@style/split_line" />
     <LinearLayout style="@style/my_linearLayout">
         <TextView style="@style/attr_text"
             android:text="STATUS"/>
 
         <ImageView style="@style/img_arrow"
-            android:onClick="showInfo"/>
+            android:id="@+id/arrow"/>
     </LinearLayout>
 
     </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

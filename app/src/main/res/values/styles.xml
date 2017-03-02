@@ -42,12 +42,12 @@
     </style>
     
     <style name="img_arrow">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">20dp</item>
         <item name="android:src">@drawable/moreinfo_arrow</item>
     </style>
 
-    <style name="SplitLine">
+    <style name="split_line">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0.5dp</item>
         <item name="android:background">@color/border_clo</item>
